@@ -1,0 +1,13 @@
+bucket: example-s3-bucket-name
+logging:
+  format: "%(asctime)-15s %(message)s"
+  filepath: /var/log/s3_backup/example.log
+  level: INFO
+backup:
+  retain: 10
+  backup_target: /var/exampledir/
+  includes:
+    - '*.html'
+    - '*.xml'
+    - configs
+    - results
