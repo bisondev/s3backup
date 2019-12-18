@@ -17,7 +17,6 @@ list_parser = commands.add_parser('list')
 
 logger = logging.getLogger('s3_backup:cli')
 logging.basicConfig(
-    filename='/var/log/s3_backup/cli.log',
     format="%(asctime)-15s %(message)s"
 )
 
