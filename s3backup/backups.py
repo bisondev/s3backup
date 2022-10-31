@@ -266,7 +266,7 @@ class Collection(object):
 
     def filterd(self, filter_fn):
         """Filter this Collection's objects and return a new one."""
-        filtered = filter(filter_fn, self.objects)
+        filtered = list(filter(filter_fn, self.objects))
         return self.__class__(objects=filtered)
 
     def ordered(self, order_by='modified', desc=True):
