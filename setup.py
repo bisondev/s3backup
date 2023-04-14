@@ -8,15 +8,15 @@ long_description = "Not so long description."
 
 setup(
     name='s3backup',
-    version='0.0.1',
+    version='0.0.2',
     description='Bison S3 Backup',
     long_description=long_description,
     author='Patrick Allen',
     author_email='pallen@bison.co',
     classifiers=[
         'Intended Audience :: Developers',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
     ],
     entry_points={
         'console_scripts': [
